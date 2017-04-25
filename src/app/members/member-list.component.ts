@@ -9,11 +9,11 @@ import { Member } from '../model'
 })
 export class MemberListComponent  { 
 
-  activeMember: Member;
+  @Output()
+  selectedMember = new EventEmitter<Member>();
 
   selectMember(member: Member) {
-      this.activeMember = member;
-      console.log(this.activeMember);
+      this.selectedMember.emit(member);
   }
 
   members: Member[] = [

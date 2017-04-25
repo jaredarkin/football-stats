@@ -8,18 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var MemberSectionComponent = (function () {
     function MemberSectionComponent() {
-        this.members = [
-            { id: 1, name: 'Jared Arkin', years: [2016, 2015, 2014, 2013] },
-            { id: 2, name: 'Josh Arkin', years: [2016, 2014, 2013] },
-            { id: 3, name: 'Jeff Jones', years: [2016, 2015, 2014] },
-            { id: 4, name: 'Adam Ligh', years: [2015, 2014] },
-            { id: 5, name: 'Danny Schwarz', years: [2016, 2015, 2012] }
-        ];
     }
-    MemberSectionComponent.prototype.selectMember = function (member) {
+    MemberSectionComponent.prototype.selectedMember = function (member) {
         this.activeMember = member;
-        console.log(this.activeMember);
     };
+    ;
     return MemberSectionComponent;
 }());
 MemberSectionComponent = __decorate([

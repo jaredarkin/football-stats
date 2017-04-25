@@ -6,4 +6,13 @@
     <ul>
         <li *ngFor="let year of member.years">{{ year }}</li>
     </ul>
+    <div>
+        <section *ngFor="let results of member.yearlyResults">
+        <h3>Results for {{ results.year }}:</h3>
+        <p>Wins: {{ results.wins }}</p>
+        <p>Losses: {{ results.losses }}</p>
+        <p>Pushes: {{ results.pushes }}</p>
+        <p>Percentage: {{ results.percentage }}%</p>
+        </section>
+    </div>
 </div>

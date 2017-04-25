@@ -1,0 +1,9 @@
+<h1 *ngIf="!member">Please Select a Member</h1>
+
+<div *ngIf="member">
+    <h1>Member Profile</h1>
+    <h2>{{ member.name }} </h2>
+    <ul>
+        <li *ngFor="let year of member.years">{{ year }}</li>
+    </ul>
+</div>

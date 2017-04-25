@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-4">
+        <div *ngIf="members">
+            <ul class="list-group members-list">
+                <li class="list-group-item" 
+                    *ngFor="let member of members"
+                    (click)="selectMember(member)"
+                    [class.active]="member === activeMember"
+                    >{{member.name}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-sm-8">
+        <member-detail [member]="activeMember"></member-detail>
+    </div>
+</div>      

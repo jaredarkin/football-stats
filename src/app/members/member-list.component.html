@@ -1,0 +1,13 @@
+<div *ngIf="members">
+    <ul class="list-group members-list">
+        <li class="list-group-item" 
+            *ngFor="let memb of members"
+            (click)="selectMember(memb)"
+            [class.active]="memb === activeMember"
+            >{{memb.name}}</li>
+    </ul>
+</div>
+
+
+          <!--(click)="selectUser(user)"
+          [class.active]="user === activeUser">-->

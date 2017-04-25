@@ -1,7 +1,7 @@
 export class Member {
     id: number;
     name: string;
-    years: number[];
+    years: string[];
     yearlyResults: YearlyResults[];
 }
 

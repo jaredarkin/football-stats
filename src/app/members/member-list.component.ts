@@ -20,7 +20,7 @@ export class MemberListComponent  {
     {
       id: 1, 
       name: 'Jared Arkin', 
-      years: [2016, 2015, 2014, 2013], 
+      years: ['2016', '2015', '2014', '2013'], 
       yearlyResults: [{
         year: '2016',
         wins: 52,
@@ -40,7 +40,7 @@ export class MemberListComponent  {
     {
       id: 2, 
       name: 'Josh Arkin', 
-      years: [2016, 2015, 2013], 
+      years: ['2016', '2015', '2013'], 
       yearlyResults: [{
         year: '2016',
         wins: 49,
@@ -59,7 +59,7 @@ export class MemberListComponent  {
     {
       id: 3, 
       name: 'Adam Ligh', 
-      years: [2016, 2015, 2013], 
+      years: ['2016', '2015', '2013'], 
       yearlyResults: [{
         year: '2016',
         wins: 51,
@@ -78,7 +78,7 @@ export class MemberListComponent  {
     {
       id: 4, 
       name: 'Jeff Jones', 
-      years: [2016, 2015], 
+      years: ['2016', '2015'], 
       yearlyResults: [{
         year: '2016',
         wins: 35,
@@ -97,7 +97,7 @@ export class MemberListComponent  {
     {
       id: 5, 
       name: 'Danny Schwartz', 
-      years: [2016, 2015, 2014], 
+      years: ['2016', '2015', '2014'], 
       yearlyResults: [{
         year: '2016',
         wins: 44,

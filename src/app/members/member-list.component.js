@@ -16,7 +16,7 @@ var MemberListComponent = (function () {
             {
                 id: 1,
                 name: 'Jared Arkin',
-                years: [2016, 2015, 2014, 2013],
+                years: ['2016', '2015', '2014', '2013'],
                 yearlyResults: [{
                         year: '2016',
                         wins: 52,
@@ -36,7 +36,7 @@ var MemberListComponent = (function () {
             {
                 id: 2,
                 name: 'Josh Arkin',
-                years: [2016, 2015, 2013],
+                years: ['2016', '2015', '2013'],
                 yearlyResults: [{
                         year: '2016',
                         wins: 49,
@@ -55,7 +55,7 @@ var MemberListComponent = (function () {
             {
                 id: 3,
                 name: 'Adam Ligh',
-                years: [2016, 2015, 2013],
+                years: ['2016', '2015', '2013'],
                 yearlyResults: [{
                         year: '2016',
                         wins: 51,
@@ -74,7 +74,7 @@ var MemberListComponent = (function () {
             {
                 id: 4,
                 name: 'Jeff Jones',
-                years: [2016, 2015],
+                years: ['2016', '2015'],
                 yearlyResults: [{
                         year: '2016',
                         wins: 35,
@@ -93,7 +93,7 @@ var MemberListComponent = (function () {
             {
                 id: 5,
                 name: 'Danny Schwartz',
-                years: [2016, 2015, 2014],
+                years: ['2016', '2015', '2014'],
                 yearlyResults: [{
                         year: '2016',
                         wins: 44,

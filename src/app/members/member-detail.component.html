@@ -1,18 +1,21 @@
 <h1 *ngIf="!member">Please Select a Member</h1>
 
 <div *ngIf="member">
-    <h1>Member Profile</h1>
-    <h2>{{ member.name }} </h2>
-    <ul>
-        <li *ngFor="let year of member.years">{{ year }}</li>
-    </ul>
-    <div>
-        <section *ngFor="let results of member.yearlyResults">
-        <h3>Results for {{ results.year }}:</h3>
-        <p>Wins: {{ results.wins }}</p>
-        <p>Losses: {{ results.losses }}</p>
-        <p>Pushes: {{ results.pushes }}</p>
-        <p>Percentage: {{ results.percentage }}%</p>
+    <!--<h2>Member Profile</h2>-->
+    <h1>{{ member.name }} </h1>
+    <p>Show Results For:</p>
+
+    <div *ngFor="let year of member.yearlyResults; let i = index">
+        <label><input type="checkbox" 
+                        #i name="year.year" 
+                        [(ngModel)]="i.showResults" 
+                        (click)="toggleResults()"/>
+                        {{ year.year }}</label>
+        <section *ngIf="i.showResults">
+            <p>Wins: {{ year.wins }}</p>
+            <p>Losses: {{ year.losses }}</p>
+            <p>Pushes: {{ year.pushes }}</p>
+            <p>Percentage: {{ year.percentage }}%</p>
         </section>
     </div>
 </div>

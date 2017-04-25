@@ -7,9 +7,14 @@ import { Member } from '../model'
   selector: 'member-detail',
   templateUrl: 'member-detail.component.html'
 })
-export class MemberDetailComponent  { 
+export class MemberDetailComponent { 
 
   @Input()
   member: Member;
 
+  showResults = true;
+
+  toggleResults() {
+    this.showResults = !this.showResults;
+  }
 }

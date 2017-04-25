@@ -12,7 +12,11 @@ var core_1 = require("@angular/core");
 var model_1 = require("../model");
 var MemberDetailComponent = (function () {
     function MemberDetailComponent() {
+        this.showResults = true;
     }
+    MemberDetailComponent.prototype.toggleResults = function () {
+        this.showResults = !this.showResults;
+    };
     return MemberDetailComponent;
 }());
 __decorate([
